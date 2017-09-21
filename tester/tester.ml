@@ -20,6 +20,9 @@ let stack_safe_map_functions = [
   "unrolled-5-chunked-12-hybrid",
     Functions.Generated.plain_unrolled_prefix_5
       Functions.Generated.chunked_tail_recursive_map_12 1000;
+
+  "tupled",
+    Functions.Contrib.tupled_map;
 ]
 
 let stack_unsafe_map_functions = [
