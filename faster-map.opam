@@ -1,0 +1,9 @@
+opam-version: "1.2"
+
+depends: [
+  "base"
+  "batteries"
+  "containers"
+  "core_bench"
+  "jbuilder" {build & >= "1.0+beta13"}
+]

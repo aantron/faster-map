@@ -1,0 +1,15 @@
+(jbuild_version 1)
+
+; Example output of the generator can be found in results/faster_map.ml. That is
+; basically a dumped and commented generated.ml.
+(rule
+ ((targets (generated.ml))
+  (deps (${ROOT}/generator/generator.exe))
+  (action (with-stdout-to ${@} (run ${<})))))
+
+(library
+ ((name functions)
+  (public_name faster-map.functions)
+  (flags (:standard -w +A))
+  (ocamlopt_flags (:standard -O3))
+  (libraries (base batteries containers))))

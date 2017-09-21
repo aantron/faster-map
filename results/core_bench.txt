@@ -1,0 +1,197 @@
+With lists of size 1000
+Estimated testing time 1.5m (9 benchmarks x 10s). Change using -quota SECS.
+
+  Name                           Time/Run   mWd/Run   mjWd/Run   Prom/Run   Percentage
+ ------------------------------ ---------- --------- ---------- ---------- ------------
+  warmup                           8.88us    6.01kw     51.58w     51.58w      100.00%
+  naive-tail-recursive             8.58us    6.01kw     51.56w     51.56w       96.57%
+  base                             4.76us    3.00kw     16.99w     16.99w       53.55%
+  batteries                        8.51us    3.01kw     34.34w     34.34w       95.78%
+  containers                       4.86us    3.00kw     17.11w     17.11w       54.78%
+  chunked-tail-recursive-12        5.33us    3.27kw     18.15w     18.15w       60.07%
+  unrolled-5-chunked-12-hybrid     4.92us    3.00kw     17.01w     17.01w       55.45%
+  stdlib                           6.68us    3.00kw     17.16w     17.16w       75.26%
+  unrolled-5                       4.64us    3.00kw     17.08w     17.08w       52.24%
+
+With lists of size 1778
+Estimated testing time 1.5m (9 benchmarks x 10s). Change using -quota SECS.
+
+  Name                           Time/Run   mWd/Run   mjWd/Run   Prom/Run   Percentage
+ ------------------------------ ---------- --------- ---------- ---------- ------------
+  warmup                          16.77us   10.67kw    162.52w    162.52w       83.98%
+  naive-tail-recursive            16.75us   10.67kw    162.59w    162.59w       83.85%
+  base                            10.86us    5.33kw     54.29w     54.29w       54.37%
+  batteries                       16.97us    5.34kw    108.65w    108.65w      100.00%
+  containers                       9.91us    5.33kw     54.27w     54.27w       49.63%
+  chunked-tail-recursive-12        9.87us    5.80kw     58.97w     58.97w       49.42%
+  unrolled-5-chunked-12-hybrid     9.36us    5.33kw     54.22w     54.22w       46.84%
+  stdlib                          13.26us    5.33kw     54.20w     54.20w       66.41%
+  unrolled-5                       9.29us    5.33kw     54.17w     54.17w       46.52%
+
+With lists of size 3162
+Estimated testing time 1.5m (9 benchmarks x 10s). Change using -quota SECS.
+
+  Name                           Time/Run   mWd/Run   mjWd/Run   Prom/Run   Percentage
+ ------------------------------ ---------- --------- ---------- ---------- ------------
+  warmup                          35.40us   18.98kw    515.52w    515.52w       98.57%
+  naive-tail-recursive            35.92us   18.98kw    515.65w    515.65w      100.00%
+  base                            18.72us    9.49kw    171.50w    171.50w       52.11%
+  batteries                       32.31us    9.49kw    343.70w    343.70w       89.95%
+  containers                      19.32us    9.49kw    171.62w    171.62w       53.80%
+  chunked-tail-recursive-12       20.16us   10.29kw    185.64w    185.64w       56.13%
+  unrolled-5-chunked-12-hybrid    18.56us    9.49kw    171.60w    171.60w       51.68%
+  stdlib                          24.82us    9.49kw    171.68w    171.68w       69.10%
+  unrolled-5                      18.34us    9.49kw    171.56w    171.56w       51.07%
+
+With lists of size 5623
+Estimated testing time 1.5m (9 benchmarks x 10s). Change using -quota SECS.
+
+  Name                           Time/Run   mWd/Run    mjWd/Run    Prom/Run   Percentage
+ ------------------------------ ---------- --------- ----------- ----------- ------------
+  warmup                          80.94us   33.74kw   1_632.35w   1_632.35w       99.49%
+  naive-tail-recursive            81.35us   33.74kw   1_631.49w   1_631.49w      100.00%
+  base                            42.80us   18.71kw     570.59w     570.59w       52.61%
+  batteries                       69.22us   16.87kw   1_086.92w   1_086.92w       85.08%
+  containers                      48.21us   21.74kw     636.07w     636.07w       59.26%
+  chunked-tail-recursive-12       42.69us   18.29kw     593.09w     593.09w       52.48%
+  unrolled-5-chunked-12-hybrid    40.86us   17.04kw     543.84w     543.84w       50.23%
+  stdlib                          51.63us   16.87kw     542.87w     542.87w       63.47%
+  unrolled-5                      39.30us   16.87kw     543.27w     543.27w       48.30%
+
+With lists of size 10000
+Estimated testing time 1.5m (9 benchmarks x 10s). Change using -quota SECS.
+
+  Name                           Time/Run   mWd/Run   mjWd/Run   Prom/Run   Percentage
+ ------------------------------ ---------- --------- ---------- ---------- ------------
+  warmup                         200.65us   60.01kw     5.17kw     5.17kw      100.00%
+  naive-tail-recursive           199.15us   60.01kw     5.16kw     5.16kw       99.25%
+  base                           127.08us   44.98kw     2.57kw     2.57kw       63.33%
+  batteries                      157.77us   30.01kw     3.45kw     3.45kw       78.63%
+  containers                     139.67us   48.01kw     2.96kw     2.96kw       69.61%
+  chunked-tail-recursive-12       96.08us   32.52kw     1.88kw     1.88kw       47.88%
+  unrolled-5-chunked-12-hybrid    94.10us   31.27kw     1.76kw     1.76kw       46.90%
+  stdlib                         115.30us   30.00kw     1.72kw     1.72kw       57.46%
+  unrolled-5                      90.75us   30.00kw     1.72kw     1.72kw       45.23%
+
+With lists of size 17782
+Estimated testing time 1.5m (9 benchmarks x 10s). Change using -quota SECS.
+
+  Name                           Time/Run    mWd/Run   mjWd/Run   Prom/Run   Percentage
+ ------------------------------ ---------- ---------- ---------- ---------- ------------
+  warmup                         531.47us   106.70kw    16.37kw    16.37kw      100.00%
+  naive-tail-recursive           531.40us   106.70kw    16.37kw    16.37kw       99.99%
+  base                           394.62us    91.67kw    11.08kw    11.08kw       74.25%
+  batteries                      393.83us    53.35kw    10.93kw    10.93kw       74.10%
+  containers                     419.67us    94.70kw    12.04kw    12.04kw       78.96%
+  chunked-tail-recursive-12      237.27us    57.82kw     5.97kw     5.97kw       44.64%
+  unrolled-5-chunked-12-hybrid   233.32us    56.57kw     5.71kw     5.71kw       43.90%
+  stdlib                         274.91us    53.35kw     5.46kw     5.46kw       51.73%
+  unrolled-5                     223.90us    53.35kw     5.45kw     5.45kw       42.13%
+
+With lists of size 31622
+Estimated testing time 1.5m (9 benchmarks x 10s). Change using -quota SECS.
+
+  Name                             Time/Run    mWd/Run   mjWd/Run   Prom/Run   Percentage
+ ------------------------------ ------------ ---------- ---------- ---------- ------------
+  warmup                         1_506.24us   189.74kw    51.86kw    51.86kw       99.89%
+  naive-tail-recursive           1_507.94us   189.74kw    51.85kw    51.85kw      100.00%
+  base                           1_230.42us   174.71kw    41.05kw    41.05kw       81.60%
+  batteries                      1_063.35us    94.87kw    34.73kw    34.73kw       70.52%
+  containers                     1_299.97us   177.74kw    43.52kw    43.52kw       86.21%
+  chunked-tail-recursive-12        615.53us   102.81kw    18.82kw    18.82kw       40.82%
+  unrolled-5-chunked-12-hybrid     614.71us   101.56kw    18.40kw    18.40kw       40.77%
+  stdlib                           710.72us    94.87kw    17.31kw    17.31kw       47.13%
+  unrolled-5                       592.91us    94.88kw    17.20kw    17.20kw       39.32%
+
+With lists of size 56234
+Estimated testing time 1.5m (9 benchmarks x 10s). Change using -quota SECS.
+
+  Name                           Time/Run    mWd/Run   mjWd/Run   Prom/Run   Percentage
+ ------------------------------ ---------- ---------- ---------- ---------- ------------
+  warmup                           4.13ms   337.42kw   158.76kw   158.76kw      100.00%
+  naive-tail-recursive             4.12ms   337.42kw   159.64kw   159.64kw       99.69%
+  base                             3.72ms   322.39kw   143.09kw   143.09kw       90.02%
+  batteries                        2.94ms   168.71kw   110.54kw   110.54kw       71.21%
+  containers                       3.87ms   325.42kw   148.06kw   148.06kw       93.68%
+  chunked-tail-recursive-12        1.68ms   182.82kw    59.67kw    59.67kw       40.78%
+  unrolled-5-chunked-12-hybrid     1.69ms   181.57kw    58.70kw    58.70kw       41.03%
+  stdlib                           1.93ms   168.71kw    55.07kw    55.07kw       46.66%
+  unrolled-5                       1.64ms   168.72kw    55.06kw    55.06kw       39.83%
+
+With lists of size 100000
+Estimated testing time 1.5m (9 benchmarks x 10s). Change using -quota SECS.
+
+  Name                           Time/Run    mWd/Run   mjWd/Run   Prom/Run   Percentage
+ ------------------------------ ---------- ---------- ---------- ---------- ------------
+  warmup                          10.11ms   600.02kw   409.92kw   409.92kw       99.95%
+  naive-tail-recursive            10.11ms   600.02kw   410.31kw   410.31kw      100.00%
+  base                             9.75ms   584.99kw   394.22kw   394.22kw       96.41%
+  batteries                        7.24ms   300.01kw   300.53kw   300.53kw       71.64%
+  containers                       9.86ms   588.02kw   396.95kw   396.95kw       97.55%
+  chunked-tail-recursive-12        4.83ms   325.10kw   187.91kw   187.91kw       47.79%
+  unrolled-5-chunked-12-hybrid     4.81ms   323.85kw   187.39kw   187.39kw       47.59%
+  stdlib                           5.44ms   300.01kw   169.18kw   169.18kw       53.81%
+  unrolled-5                       4.58ms   300.03kw   168.54kw   168.54kw       45.30%
+
+With lists of size 177827
+Estimated testing time 1.5m (9 benchmarks x 10s). Change using -quota SECS.
+
+  Name                           Time/Run      mWd/Run   mjWd/Run   Prom/Run   Percentage
+ ------------------------------ ---------- ------------ ---------- ---------- ------------
+  warmup                          20.28ms   1_066.99kw   862.08kw   862.08kw       98.36%
+  naive-tail-recursive            20.39ms   1_066.99kw   860.39kw   860.39kw       98.90%
+  base                            20.61ms   1_051.96kw   852.87kw   852.87kw      100.00%
+  batteries                       12.80ms     533.50kw   533.89kw   533.89kw       62.09%
+  containers                      20.59ms   1_054.99kw   855.80kw   855.80kw       99.88%
+  chunked-tail-recursive-12       10.85ms     578.10kw   436.76kw   436.76kw       52.63%
+  unrolled-5-chunked-12-hybrid    10.95ms     576.85kw   436.40kw   436.40kw       53.11%
+  stdlib                          12.02ms     533.49kw   352.43kw   352.43kw       58.33%
+  unrolled-5                       9.69ms     533.54kw   348.90kw   348.90kw       47.00%
+
+With lists of size 316227
+Estimated testing time 1.5m (9 benchmarks x 10s). Change using -quota SECS.
+
+  Name                           Time/Run      mWd/Run     mjWd/Run     Prom/Run   Percentage
+ ------------------------------ ---------- ------------ ------------ ------------ ------------
+  warmup                          39.69ms   1_897.41kw   1_711.40kw   1_711.40kw       98.75%
+  naive-tail-recursive            40.19ms   1_897.41kw   1_708.44kw   1_708.44kw      100.00%
+  base                            39.83ms   1_882.38kw   1_692.98kw   1_692.98kw       99.10%
+  batteries                       22.69ms     948.71kw     949.94kw     949.94kw       56.44%
+  containers                      39.75ms   1_885.41kw   1_690.34kw   1_690.34kw       98.91%
+  chunked-tail-recursive-12       21.01ms   1_028.02kw     852.65kw     852.65kw       52.28%
+  unrolled-5-chunked-12-hybrid    21.29ms   1_026.77kw     865.12kw     865.12kw       52.98%
+  stdlib                          27.43ms     948.70kw     816.56kw     816.56kw       68.24%
+  unrolled-5                      21.73ms     948.79kw     814.05kw     814.05kw       54.08%
+
+With lists of size 562341
+Estimated testing time 1.5m (9 benchmarks x 10s). Change using -quota SECS.
+
+  Name                           Time/Run   mWd/Run   mjWd/Run   Prom/Run   Percentage
+ ------------------------------ ---------- --------- ---------- ---------- ------------
+  warmup                          75.24ms    3.37Mw     3.20Mw     3.20Mw      100.00%
+  naive-tail-recursive            74.58ms    3.37Mw     3.20Mw     3.20Mw       99.13%
+  base                            74.52ms    3.36Mw     3.17Mw     3.17Mw       99.06%
+  batteries                       40.95ms    1.69Mw     1.69Mw     1.69Mw       54.43%
+  containers                      74.32ms    3.36Mw     3.16Mw     3.16Mw       98.79%
+  chunked-tail-recursive-12       41.32ms    1.83Mw     1.69Mw     1.69Mw       54.92%
+  unrolled-5-chunked-12-hybrid    40.87ms    1.83Mw     1.68Mw     1.68Mw       54.32%
+  stdlib                          59.74ms    1.69Mw     1.56Mw     1.56Mw       79.41%
+  unrolled-5                      44.40ms    1.69Mw     1.56Mw     1.56Mw       59.01%
+
+With lists of size 1000000
+Estimated testing time 1.5m (9 benchmarks x 10s). Change using -quota SECS.
+
+  Name                           Time/Run   mWd/Run   mjWd/Run   Prom/Run   Percentage
+ ------------------------------ ---------- --------- ---------- ---------- ------------
+  warmup                         148.21ms    6.00Mw     5.81Mw     5.81Mw       99.50%
+  naive-tail-recursive           148.94ms    6.00Mw     5.82Mw     5.82Mw      100.00%
+  base                           144.06ms    5.99Mw     5.84Mw     5.84Mw       96.72%
+  batteries                       80.38ms    3.00Mw     3.00Mw     3.00Mw       53.97%
+  containers                     140.06ms    5.99Mw     5.80Mw     5.80Mw       94.04%
+  chunked-tail-recursive-12       79.42ms    3.25Mw     3.11Mw     3.11Mw       53.33%
+  unrolled-5-chunked-12-hybrid    77.30ms    3.25Mw     3.12Mw     3.12Mw       51.90%
+  stdlib                         135.12ms    3.00Mw     2.88Mw     2.88Mw       90.72%
+  unrolled-5                      92.66ms    3.00Mw     2.88Mw     2.88Mw       62.21%
+
+Benchmarks that take 1ns to 100ms can be estimated precisely. For more reliable
+estimates, redesign your benchmark to have a shorter execution time.
