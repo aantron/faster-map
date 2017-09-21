@@ -1,4 +1,4 @@
-set terminal svg size 600,600 fname "Helvetica" fsize 16
+set terminal svg size 600,500 fname "Helvetica" fsize 14
 
 set output "_report/map.svg"
 source="_report/results.txt"
@@ -15,7 +15,7 @@ unset border
 set tics scale 0
 
 set key bottom horizontal
-set key font ",14"
+set key font ",13"
 
 set style line 1 lc 0 lw 3 dt 3 pi 2
 set style line 2 lc 9 lw 3
