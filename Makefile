@@ -1,6 +1,6 @@
 .PHONY : run
 run :
-	jbuilder build --dev tester/tester.exe reporter/reporter.exe
+	dune build --profile=dev tester/tester.exe reporter/reporter.exe
 	mkdir -p _report
 	_build/default/tester/tester.exe -ascii -quota 10 > _report/core_bench.txt
 	_build/default/reporter/reporter.exe \
@@ -9,7 +9,7 @@ run :
 
 .PHONY : test-correctness
 test-correctness :
-	jbuilder build --dev correctness/correctness.exe
+	dune build --profile=dev correctness/correctness.exe
 	_build/default/correctness/correctness.exe
 
 MEMORY_TESTS := $(shell ls memory/*/test.ml)
@@ -17,7 +17,7 @@ MEMORY_TESTS := $(MEMORY_TESTS:.ml=.exe)
 
 .PHONY : compare-memory-usage
 compare-memory-usage :
-	jbuilder build --dev $(MEMORY_TESTS)
+	dune build --profile=dev $(MEMORY_TESTS)
 	@echo "map             stack   heap    total"
 	@for TEST in $(MEMORY_TESTS) ; \
 	do \
@@ -32,5 +32,5 @@ depend :
 
 .PHONY : clean
 clean :
-	jbuilder clean
+	dune clean
 	rm -rf _report
