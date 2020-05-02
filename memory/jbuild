@@ -1,7 +1,0 @@
-(jbuild_version 1)
-
-(library
- ((name instrumented)
-  (public_name faster-map.instrumented)
-  (flags (:standard -w +A))
-  (ocamlopt_flags (:standard -O3))))

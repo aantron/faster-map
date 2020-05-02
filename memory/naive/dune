@@ -1,0 +1,5 @@
+(executable
+ (name test)
+ (flags :standard -w +A)
+ (ocamlopt_flags :standard -O3)
+ (libraries faster-map.instrumented))
