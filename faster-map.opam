@@ -5,5 +5,5 @@ depends: [
   "batteries"
   "containers"
   "core_bench"
-  "jbuilder" {build & >= "1.0+beta13"}
+  "dune" {build & >= "1.0"}
 ]

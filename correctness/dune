@@ -1,0 +1,4 @@
+(executable
+ (name correctness)
+ (flags :standard -w +A)
+ (libraries faster-map.functions))

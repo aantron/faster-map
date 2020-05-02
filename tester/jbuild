@@ -1,7 +1,0 @@
-(jbuild_version 1)
-
-(executable
- ((name tester)
-  (flags (:standard -w +A))
-  (ocamlopt_flags (:standard -O3))
-  (libraries (core_bench faster-map.functions))))
