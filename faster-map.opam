@@ -10,5 +10,5 @@ depends: [
   "batteries"
   "containers"
   "core_bench"
-  "dune" {build & >= "1.0"}
+  "dune"
 ]
