@@ -1,4 +1,4 @@
-set terminal svg size 600,500 fname "Helvetica" fsize 14
+set terminal svg size 600,500 font "Helvetica,14"
 
 set output "_report/map.svg"
 source="_report/results.txt"
